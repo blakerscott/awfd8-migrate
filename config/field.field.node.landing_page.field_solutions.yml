@@ -1,0 +1,21 @@
+uuid: adf1f063-feae-4fd4-a406-4aafcf73eb49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_solutions
+    - node.type.landing_page
+  module:
+    - text
+id: node.landing_page.field_solutions
+field_name: field_solutions
+entity_type: node
+bundle: landing_page
+label: 'Solutions description'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,29 @@
+uuid: a407dee1-9e5f-4598-8ec1-e70bc2c10a9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags_policy
+    - node.type.landing_page
+    - taxonomy.vocabulary.policy
+id: node.landing_page.field_tags_policy
+field_name: field_tags_policy
+entity_type: node
+bundle: landing_page
+label: 'Policy Tagged'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      policy: policy
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

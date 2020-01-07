@@ -1,0 +1,29 @@
+uuid: 5aca906e-f20c-43fa-ada7-480b7463915d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags_animal
+    - node.type.landing_page
+    - taxonomy.vocabulary.species
+id: node.landing_page.field_tags_animal
+field_name: field_tags_animal
+entity_type: node
+bundle: landing_page
+label: 'Animals Tagged'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      species: species
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

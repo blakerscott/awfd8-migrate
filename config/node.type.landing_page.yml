@@ -1,0 +1,18 @@
+uuid: 3050d4ad-1f8a-4223-8f78-db89f07ac160
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:menu_link_content:ad4fee85-e5ea-4f75-85eb-0aa01ee41bcc'
+name: 'Landing Page'
+type: landing_page
+description: 'Use this content type to create <em>Overview</em> landing pages for each main section of the site, and <em>Sub Pages</em> for pages under Land & Habitat, Community Empowerment and Economic Development.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

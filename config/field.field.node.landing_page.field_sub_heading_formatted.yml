@@ -1,0 +1,21 @@
+uuid: 7348e7c9-cf3e-479b-b4cc-fbf77980ec68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sub_heading_formatted
+    - node.type.landing_page
+  module:
+    - text
+id: node.landing_page.field_sub_heading_formatted
+field_name: field_sub_heading_formatted
+entity_type: node
+bundle: landing_page
+label: 'Sub Heading Formatted'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

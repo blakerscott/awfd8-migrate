@@ -1,0 +1,21 @@
+uuid: 907a9222-5e77-4bed-8558-c0a26712775d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_challenges
+    - node.type.landing_page
+  module:
+    - text
+id: node.landing_page.field_challenges
+field_name: field_challenges
+entity_type: node
+bundle: landing_page
+label: Challenges
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

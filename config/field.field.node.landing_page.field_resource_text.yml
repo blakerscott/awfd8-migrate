@@ -1,0 +1,22 @@
+uuid: c1692083-cec5-4f29-b4a4-497c25860ed9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resource_text
+    - node.type.landing_page
+  module:
+    - text
+id: node.landing_page.field_resource_text
+field_name: field_resource_text
+entity_type: node
+bundle: landing_page
+label: 'Resource Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

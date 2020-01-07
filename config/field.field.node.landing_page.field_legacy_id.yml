@@ -1,0 +1,23 @@
+uuid: a94e3069-fcc6-478c-bc4f-e0e9e74f3572
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_id
+    - node.type.landing_page
+id: node.landing_page.field_legacy_id
+field_name: field_legacy_id
+entity_type: node
+bundle: landing_page
+label: 'Legacy ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

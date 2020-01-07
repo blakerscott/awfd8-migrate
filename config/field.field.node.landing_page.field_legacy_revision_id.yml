@@ -1,0 +1,23 @@
+uuid: 2d6ac46c-6f0b-4040-b593-575c09519ae9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legacy_revision_id
+    - node.type.landing_page
+id: node.landing_page.field_legacy_revision_id
+field_name: field_legacy_revision_id
+entity_type: node
+bundle: landing_page
+label: 'Legacy Revision ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

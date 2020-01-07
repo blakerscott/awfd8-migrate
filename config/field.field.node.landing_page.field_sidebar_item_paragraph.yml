@@ -1,0 +1,58 @@
+uuid: 4f7b1810-2cf0-4110-8189-ebafba67778f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sidebar_item_paragraph
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.sidebar_item
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_sidebar_item_paragraph
+field_name: field_sidebar_item_paragraph
+entity_type: node
+bundle: landing_page
+label: Item
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      sidebar_item: sidebar_item
+    target_bundles_drag_drop:
+      animal_habitat:
+        weight: 11
+        enabled: false
+      bullet_point:
+        weight: 12
+        enabled: false
+      facts:
+        weight: 13
+        enabled: false
+      history:
+        weight: 14
+        enabled: false
+      module:
+        weight: 15
+        enabled: false
+      overview_facts:
+        weight: 16
+        enabled: false
+      schedule:
+        weight: 17
+        enabled: false
+      sidebar_item:
+        enabled: true
+        weight: 18
+      solution:
+        weight: 19
+        enabled: false
+      solution_bulletpoint:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,29 @@
+uuid: 6a8cacb1-db9d-4d99-961c-77fe46cf181b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags_economic
+    - node.type.landing_page
+    - taxonomy.vocabulary.economic
+id: node.landing_page.field_tags_economic
+field_name: field_tags_economic
+entity_type: node
+bundle: landing_page
+label: 'Economic Tagged'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      economic: economic
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

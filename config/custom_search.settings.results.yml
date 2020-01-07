@@ -13,6 +13,7 @@ node_search:
       hostory: hostory
       history: history
       career: career
+      landing_page: landing_page
     languages:
       en: en
       und: und
@@ -32,6 +33,7 @@ user_search:
       hostory: hostory
       history: history
       career: career
+      landing_page: landing_page
     languages:
       en: en
       und: und

@@ -1,0 +1,21 @@
+uuid: 0ee87065-0e29-442f-9d8d-38afe7ebab07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_project_text
+    - node.type.landing_page
+  module:
+    - text
+id: node.landing_page.field_project_text
+field_name: field_project_text
+entity_type: node
+bundle: landing_page
+label: 'Project Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

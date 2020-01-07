@@ -1,0 +1,29 @@
+uuid: 1407c734-7027-412d-a821-dde493ede1e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags_landing_page
+    - node.type.landing_page
+    - taxonomy.vocabulary.tags
+id: node.landing_page.field_tags_landing_page
+field_name: field_tags_landing_page
+entity_type: node
+bundle: landing_page
+label: 'Landing Page Type'
+description: 'Select whether this is an Overview Page or Sub Page.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

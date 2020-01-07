@@ -1,0 +1,21 @@
+uuid: 30b85f6f-39fa-4e03-a157-ff863a5833d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_featured_text
+    - node.type.landing_page
+  module:
+    - text
+id: node.landing_page.field_featured_text
+field_name: field_featured_text
+entity_type: node
+bundle: landing_page
+label: 'Featured Text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

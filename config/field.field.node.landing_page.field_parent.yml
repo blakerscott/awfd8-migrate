@@ -1,0 +1,21 @@
+uuid: 3c4e785d-fc0a-498b-9c75-5695b6e80c68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parent
+    - node.type.landing_page
+  module:
+    - options
+id: node.landing_page.field_parent
+field_name: field_parent
+entity_type: node
+bundle: landing_page
+label: 'Page Parent'
+description: 'If this is a Sub Page, please select the Parent page type.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
