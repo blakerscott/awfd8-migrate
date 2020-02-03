@@ -1,0 +1,7 @@
+name: Custom AWF
+type: module
+description: 'A module which encapsulates custom code used on the AWF site'
+package: custom
+core: 8.x
+version: 1.0
+

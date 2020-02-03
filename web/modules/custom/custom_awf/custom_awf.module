@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_file_mimetype_mapping_alter().
+ */
+function custom_awf_file_mimetype_mapping_alter(&$mapping) {
+    // Add new MIME type 'geojson'.
+    $mapping['mimetypes']['geojson'] = 'application/geo+json';  
+    // Add new extension '.geojson' and map it to the 'application/geo+json' MIME type.
+    $mapping['extensions']['geojson'] = 'geojson'; 
+}
