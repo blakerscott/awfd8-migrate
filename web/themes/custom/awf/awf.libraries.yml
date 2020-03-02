@@ -25,6 +25,7 @@ leaflet:
     src/js/includes/gotmap.js: {}
     src/js/includes/maps.js: {}
     src/js/includes/boot-maps.js: {}
+    src/js/includes/wherewework: {}
   dependencies:
     - core/drupal
     - core/jquery
