@@ -1,0 +1,25 @@
+uuid: c440ff83-2a61-48c6-bc40-5c547b2d9f97
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:921a7d6b-92bc-46c1-afeb-0a46a4c25994'
+  module:
+    - block_content
+  theme:
+    - awf
+id: whereweworkmap
+theme: awf
+region: disabled
+weight: 0
+provider: null
+plugin: 'block_content:921a7d6b-92bc-46c1-afeb-0a46a4c25994'
+settings:
+  id: 'block_content:921a7d6b-92bc-46c1-afeb-0a46a4c25994'
+  label: 'Where We Work Map'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
