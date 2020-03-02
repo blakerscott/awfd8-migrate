@@ -1,0 +1,73 @@
+uuid: 2c48aac1-3566-4928-8ec0-c992b55e751c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: landing_page_map
+label: 'Landing Page Map'
+group: Hero
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  request_path:
+    id: request_path
+    pages: /node/3032
+    negate: 0
+    uuid: ef9ebde1-6f94-452f-b94f-6b825dcdc854
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      07027ee0-7f47-444c-9fbb-af76bebe3de7:
+        id: 'views_block:hero-block_4'
+        label: ''
+        provider: views
+        label_display: 0
+        views_label: ''
+        items_per_page: none
+        region: content_preface
+        weight: '0'
+        context_mapping: {  }
+        theme: awf
+        css_class: ''
+        unique: 0
+        context_id: landing_page_map
+        uuid: 07027ee0-7f47-444c-9fbb-af76bebe3de7
+      9827a5e7-db24-46cd-9530-bb39b438191b:
+        id: 'block_content:921a7d6b-92bc-46c1-afeb-0a46a4c25994'
+        label: 'Where We Work Map'
+        provider: block_content
+        label_display: 0
+        status: true
+        info: ''
+        view_mode: full
+        region: content_preface
+        weight: '1'
+        context_mapping: {  }
+        theme: awf
+        css_class: ''
+        unique: 0
+        context_id: landing_page_map
+        uuid: 9827a5e7-db24-46cd-9530-bb39b438191b
+      79e23fa5-8439-4e48-b3f1-a1ce8c523ec9:
+        id: 'views_block:country_map-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content_preface
+        weight: '0'
+        context_mapping: {  }
+        theme: awf
+        css_class: ''
+        unique: 0
+        context_id: landing_page_map
+        uuid: 79e23fa5-8439-4e48-b3f1-a1ce8c523ec9
+    id: blocks
+    saved: false
+    uuid: dbd572f7-88a3-4458-80d2-9e4dcb65be19
+    include_default_blocks: 0
+weight: 0
