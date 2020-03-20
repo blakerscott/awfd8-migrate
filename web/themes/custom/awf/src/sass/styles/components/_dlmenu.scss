@@ -107,6 +107,15 @@
   display: none;
 }
 
+.sub-nav-toggle-back.open .sub-nav-toggle {
+  border: 2px solid red;
+  display: inline-block;
+}
+
+.region-header.mobile ul.menu > .menu-item--expanded > a.expanded-link::after {
+  border: 2px solid red;
+}
+
 .header-section {
   display: block;
   height: 100px;
@@ -203,7 +212,7 @@
       }
 
       &>li.menu-item>a.sub-nav-toggle {
-        // border: 2px solid red;
+        border: 2px solid red;
         display: block;
         height: 100%;
         width: 100%;
@@ -228,6 +237,10 @@
       &>li.menu-item:nth-child(3)>a.sub-nav-toggle {
         padding-left: 13rem;
       }
+    }
+
+    .menu-item > .menu {
+      border: 2px solid lime;
     }
 
     li {

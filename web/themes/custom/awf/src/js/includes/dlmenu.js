@@ -218,15 +218,7 @@
   var menublock = $('#block-mainmenu');
   var headergroup = $('.region-header');
   var headerSection = $('.header-section');
-  var submenuSection = $('.menu-container');
   var header = $('#header');
-  // var isMobile = function() {
-  //   if(menutoggle.css('visibility') == 'visible') {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   };
-  // }
   var framework = $('html, body');
 
   // search section
@@ -241,8 +233,7 @@
     var subnavtoggleback = $('.sub-nav-toggle-back');
     var menuExpandedlink = $('#block-mainmenu .menu li.menu-item.menu-item--expanded a.menu-link');
     var menulink = $('#block-mainmenu .menu li.menu-item .menu-link');
-    var menuset = $('#block-mainmenu .menu .main-navigation');
-    var subnav = $('#block-mainmenu .menu li.menu-item--expanded .main-navigation');
+    // var subnav = $('#block-mainmenu .menu li.menu-item--expanded .menu');
     var subNavBack = $('a.sub-nav-toggle-back');
     subNavBack.text($(this).parent().parent().find('a.menu-link:first-child').text());
 
@@ -263,7 +254,6 @@
           framework.addClass('open-menu');
           headerSection.addClass('fixed');
           windowOffset = $(window).scrollTop();
-
         }
       });
 
@@ -281,6 +271,7 @@
           $(this).addClass('open');
           $(this).siblings('.menu').addClass('open').attr('aria-expanded', 'true');
           $(this).closest('.menu').addClass('subnav');
+          $(this).addClass('SHIT');
         }
       });
 
@@ -300,7 +291,7 @@
       menublock.removeClass('open mobile-menu').attr('aria-expanded', '');
       header.removeClass('stay-open stay-open-menu');
       framework.removeClass('open-menu');
-      menuset.removeClass('subnav');
+      // menuset.removeClass('subnav');
       subnavtoggle.removeClass('open').siblings('.menu').attr('aria-expanded', '').removeClass('open').closest('.menu').removeClass('subnav');
     }
 
@@ -324,6 +315,7 @@
       $('nav.navigation.menu--main-menu > ul.menu > li.menu-item').removeClass('is-open');
     }
   };
+
   //search button
   $('#search-toggle').on('click', function(e) {
     searchSection.toggleClass('is-open');

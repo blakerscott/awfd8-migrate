@@ -2883,6 +2883,13 @@ ul.gray-bullets li {
 .sub-nav-toggle-back.menu-link {
   display: none; }
 
+.sub-nav-toggle-back.open .sub-nav-toggle {
+  border: 2px solid red;
+  display: inline-block; }
+
+.region-header.mobile ul.menu > .menu-item--expanded > a.expanded-link::after {
+  border: 2px solid red; }
+
 .header-section {
   display: block;
   height: 100px;
@@ -2950,6 +2957,7 @@ ul.gray-bullets li {
       .header-section nav.mobile-menu > ul.menu > li.menu-item > a {
         display: block; }
       .header-section nav.mobile-menu > ul.menu > li.menu-item > a.sub-nav-toggle {
+        border: 2px solid red;
         display: block;
         height: 100%;
         width: 100%;
@@ -2959,6 +2967,8 @@ ul.gray-bullets li {
         cursor: pointer; }
       .header-section nav.mobile-menu > ul.menu > li.menu-item:nth-child(3) > a.sub-nav-toggle {
         padding-left: 13rem; }
+    .header-section nav.mobile-menu .menu-item > .menu {
+      border: 2px solid lime; }
     .header-section nav.mobile-menu li {
       position: static; }
     .header-section nav.mobile-menu .menu-item {
