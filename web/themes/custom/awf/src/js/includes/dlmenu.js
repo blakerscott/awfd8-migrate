@@ -271,7 +271,8 @@
           $(this).addClass('open');
           $(this).siblings('.menu').addClass('open').attr('aria-expanded', 'true');
           $(this).closest('.menu').addClass('subnav');
-          $(this).addClass('SHIT');
+          $(this).addClass('SHITT');
+          $(this).next().find('.sub-nav-toggle').addClass('next-menu');
         }
       });
 
