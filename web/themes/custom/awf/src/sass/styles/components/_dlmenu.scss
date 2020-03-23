@@ -107,6 +107,15 @@
   display: none;
 }
 
+.sub-nav-toggle.next-menu {
+  display: inline-block;
+  float: right;
+  height: 45px;
+  width: 45px;
+  z-index: 5;
+  border: 1px solid blue;
+}
+
 .sub-nav-toggle-back.open .sub-nav-toggle {
   border: 2px solid red;
   display: inline-block;
@@ -114,6 +123,8 @@
 
 .region-header.mobile ul.menu > .menu-item--expanded > a.expanded-link::after {
   border: 2px solid red;
+  float: right;
+  top: 45px;
 }
 
 .header-section {
